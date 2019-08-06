@@ -1,0 +1,25 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+header {
+  padding: 32px 0;
+}
+nav {
+  display: grid;
+  grid-template-areas: "logo social";
+
+  grid-template-columns: 1fr 1fr;
+}
+
+.logo {
+  grid-area: logo;
+  justify-self: start;
+  align-self: center;
+}
+
+.social {
+  grid-area: social;
+  justify-self: end;
+  vertical-align: middle;
+  align-self: center;
+}

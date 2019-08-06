@@ -1,0 +1,13 @@
+body {
+  max-width: 1080px;
+  padding: 0 24px 56px;
+  margin: 0 auto;
+}
+
+@include mq(medium) {
+}
+
+.intro-text {
+  max-width: 640px;
+  padding: 64px 0;
+}

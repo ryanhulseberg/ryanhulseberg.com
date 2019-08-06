@@ -1,0 +1,32 @@
+.grid-layout {
+  //   padding: 64px 0;
+  display: grid;
+  grid-gap: 24px;
+
+  .grid-item {
+    // background: $brand-color;
+    // grid-column-end: span 6;
+    // grid-row-end: span 6;
+
+    // &__full {
+    // }
+
+    // &__two-third {
+    //   grid-column-end: span 3;
+    //   grid-row-end: span 2;
+    // }
+
+    // &__third {
+    //   grid-column-end: span 2;
+    //   grid-row-end: span 3;
+    // }
+
+    // &__third-short {
+    //   grid-column-end: span 2;
+    // }
+
+    img {
+      width: 100%;
+    }
+  }
+}
