@@ -3,28 +3,59 @@
 // -----------------------------------------------------------------------------
 header {
   padding: 32px 0;
-}
-nav {
-  display: grid;
-  grid-template-areas: "logo social";
 
-  grid-template-columns: 1fr 1fr;
-}
+  nav {
+    display: grid;
+    grid-template-areas: "logo social";
 
-.logo {
-  grid-area: logo;
-  justify-self: start;
-  align-self: center;
-}
+    grid-template-columns: 1fr 1fr;
+  }
 
-.social {
-  grid-area: social;
-  justify-self: end;
-  vertical-align: middle;
-  align-self: center;
-
-  li {
-    vertical-align: middle;
+  .logo {
+    grid-area: logo;
+    justify-self: start;
     align-self: center;
   }
+
+  .social {
+    padding-left: 0;
+    grid-area: social;
+    justify-self: end;
+    vertical-align: middle;
+    align-self: center;
+
+    li {
+      list-style: none;
+      display: inline-block;
+      padding-right: 16px;
+      vertical-align: middle;
+      align-self: center;
+    }
+
+    svg {
+      fill: #252525;
+
+      @include on-event {
+        fill: $brand-color;
+      }
+    }
+  }
 }
+
+// .logo {
+//   grid-area: logo;
+//   justify-self: start;
+//   align-self: center;
+// }
+
+// .social {
+//   grid-area: social;
+//   justify-self: end;
+//   vertical-align: middle;
+//   align-self: center;
+
+//   li {
+//     vertical-align: middle;
+//     align-self: center;
+//   }
+// }

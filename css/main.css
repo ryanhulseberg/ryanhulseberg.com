@@ -607,7 +607,7 @@ header {
   padding: 32px 0;
 }
 
-nav {
+header nav {
   display: -ms-grid;
   display: grid;
       grid-template-areas: "logo social";
@@ -615,7 +615,7 @@ nav {
       grid-template-columns: 1fr 1fr;
 }
 
-.logo {
+header .logo {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: logo;
@@ -626,7 +626,8 @@ nav {
       align-self: center;
 }
 
-.social {
+header .social {
+  padding-left: 0;
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: social;
@@ -638,38 +639,21 @@ nav {
       align-self: center;
 }
 
-.social li {
+header .social li {
+  list-style: none;
+  display: inline-block;
+  padding-right: 16px;
   vertical-align: middle;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
 }
 
-footer {
-  position: fixed;
-  bottom: 24;
-  width: 100%;
-}
-
-footer {
-  padding-top: 24px;
-}
-
-.social {
-  padding-left: 0;
-}
-
-.social li {
-  list-style: none;
-  display: inline-block;
-  padding-right: 16px;
-}
-
-.social svg {
+header .social svg {
   fill: #252525;
 }
 
-.social svg:hover, .social svg:active, .social svg:focus {
+header .social svg:hover, header .social svg:active, header .social svg:focus {
   fill: #f54449;
 }
 
