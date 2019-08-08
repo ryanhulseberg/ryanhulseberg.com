@@ -638,6 +638,13 @@ nav {
       align-self: center;
 }
 
+.social li {
+  vertical-align: middle;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
 footer {
   position: fixed;
   bottom: 24;
