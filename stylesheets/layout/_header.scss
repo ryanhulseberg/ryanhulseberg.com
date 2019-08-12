@@ -8,7 +8,7 @@ header {
     display: grid;
     grid-template-areas: "logo social";
 
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto 1fr;
   }
 
   .logo {
@@ -41,21 +41,3 @@ header {
     }
   }
 }
-
-// .logo {
-//   grid-area: logo;
-//   justify-self: start;
-//   align-self: center;
-// }
-
-// .social {
-//   grid-area: social;
-//   justify-self: end;
-//   vertical-align: middle;
-//   align-self: center;
-
-//   li {
-//     vertical-align: middle;
-//     align-self: center;
-//   }
-// }

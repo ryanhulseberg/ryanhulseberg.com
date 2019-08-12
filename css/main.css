@@ -611,8 +611,8 @@ header nav {
   display: -ms-grid;
   display: grid;
       grid-template-areas: "logo social";
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: auto 1fr;
+      grid-template-columns: auto 1fr;
 }
 
 header .logo {
